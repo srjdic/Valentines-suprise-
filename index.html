@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentine ❤️</title>
+  <style>
+    body{
+      background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+      font-family: Arial;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button{
+      font-size: 20px;
+      padding: 12px 28px;
+      margin: 15px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .blue{background:#3498db;color:white;}
+    .red{background:#e74c3c;color:white;}
+    img{
+      width:260px;
+      border-radius:20px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>💖 Ek question mere baby ke liye 💖</h2>
+<h3>Mera favourite color kya hai? 😘</h3>
+
+<button class="blue" onclick="yes()">Blue</button>
+<button class="red" onclick="no()">Red</button>
+
+<script>
+function no(){
+  alert("Galat 😝 Baby phir se socho 💋");
+}
+function yes(){
+  document.body.innerHTML = `
+    <h1>💋 Happy Valentine’s Day My Love 💋</h1>
+    <h2>My Babyyyy Ayushi ❤️</h2>
+    <img src="https://i.imgur.com/6Xb5Q0P.jpg">
+    <p style="font-size:22px;">Always yours 😘❤️</p>
+  `;
+}
+</script>
+
+</body>
+</html>
